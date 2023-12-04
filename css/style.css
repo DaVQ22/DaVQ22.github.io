@@ -1,0 +1,90 @@
+
+.conteima{
+    display: grid;
+    place-items: center;
+    height: 10vh;
+    margin: 0;
+}
+
+body{
+    background-image: url(/img/fondo.jpg);
+    background-size: 100%;
+}
+
+.padre{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "Pvida-box invisible2-box Evida-box"
+    "Prota-box invisible1-box Enemigo-box";
+}
+
+.mensajes{
+    grid-area: mensajes-box;
+    color: white;
+}
+
+.Prota{
+    grid-area: Prota-box;
+}
+
+.Enemigo{
+    grid-area: Enemigo-box;
+}
+
+.aAgua{
+    grid-area: aAgua-box;
+}
+
+.aFuego{
+    grid-area: aFuego-box;
+}
+
+.aHielo{
+    grid-area: aHielo-box;
+}
+
+.dAgua{
+    grid-area: dAgua-box;
+}
+
+.dFuego{
+    grid-area: dFuego-box;
+}
+
+.dHielo{
+    grid-area: dHielo-box;
+}
+
+.Pvida{
+    grid-area: Pvida-box;
+}
+
+.Evida{
+    grid-area: Evida-box;
+}
+
+.invisible1{
+    grid-area: invisible1-box;
+}
+
+.invisible2{
+    grid-area: invisible2-box;
+}
+
+.invisible3{
+    grid-area: invisible3-box;
+}
+
+.invisible4{
+    grid-area: invisible4-box;
+}
+
+.invisible5{
+    grid-area: invisible5-box;
+}
+
+.invisible6{
+    grid-area: invisible6-box;
+}

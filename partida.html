@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Partida</title>
+</head>
+
+<body>
+    <div class="padre">
+        <!-- volver a poner la "a" al final de los id de las vidas -->
+        <progress value="100" max="100" id="personajeVida" class="Pvida"></progress>
+        <progress value="100" max="100" id="enemigoVida" class="Evida"></progress>
+        <img src="img/main.gif" class="Prota" alt="prota" height="200px" width="150px" />
+
+        <img src="img/enemy.gif" class="Enemigo" alt="enemigo" height="200px" width="150px" />
+        <div class="invisible1">.</div>
+        <div class="invisible2">.</div>
+    </div>
+    <div class="conteima">
+        <div id="imagenes">
+            <!-- Ataque del jugador -->
+            <img onclick="aSeleccion('aAgua')" src="img/water attack.gif" class="aAgua" height="150px" width="150px"
+                alt="ataque agua" id="imagenAgua" />
+            <img onclick="aSeleccion('aFuego')" src="img/firenew.gif" class="aFuego" height="150px" width="150px"
+                alt="ataque fuego" id="imagenFuego" />
+            <img onclick="aSeleccion('aHielo')" src="img/ice.gif" class="aHielo" height="150px" width="150px"
+                alt="ataque hielo" id="imagenHielo" />
+        </div>
+
+        <div class="invisible3">.</div>
+        <div class="invisible4">.</div>
+
+        <div id="dimagenes">
+            <!-- Defensas del jugador -->
+            <img onclick="dSeleccion('deAgua')" src="img/escudoagua.gif" class="dAgua" alt="defensa agua" height="150px"
+                width="150px" id="imagenedAgua" />
+            <img onclick="dSeleccion('deFuego')" src="img/escudofuego.gif" class="dFuego" alt="defensa fuego"
+                height="150px" width="150px" id="imagenedFuego" />
+            <img onclick="dSeleccion('deHielo')" src="img/escudohielo.gif" class="dHielo" alt="defensa hielo"
+                height="150px" width="150px" id="imagenedHielo" />
+        </div>
+    </div>
+        <div class="mensajes" id="mensajes"></div>
+   
+</body>
+<script src="js/script.js"></script>
+
+</html>
